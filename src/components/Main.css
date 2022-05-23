@@ -1,0 +1,21 @@
+.service {
+    list-style: none;
+    font-size: 16px;
+    font-family: Helvetica;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+}
+
+.service h1 {
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.service .list {
+    margin-bottom: 10px;
+}
