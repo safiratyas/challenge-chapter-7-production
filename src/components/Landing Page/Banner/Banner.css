@@ -1,0 +1,31 @@
+.banner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(229, 85%, 35%);
+    border-radius: 10px;
+    margin-left: 70px;
+    width: 90%;
+}
+
+.title {
+    padding-top: 50px;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.desc {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

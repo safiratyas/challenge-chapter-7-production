@@ -1,0 +1,26 @@
+.card {
+    text-align: left;
+    font-family: Helvetica;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    width: 80%;
+}
+
+.image {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.card .card-title {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card .card-text {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+}

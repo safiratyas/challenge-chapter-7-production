@@ -1,16 +1,16 @@
 import React from 'react';
-import { 
-Container,
-Row,
-Col
+import {
+  Container,
+  Row,
+  Col
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Footer.css';
 
 class Nav extends React.Component {
-    render() {
-      return (
-        <Container className='footer'>
+  render() {
+    return (
+      <Container className='footer'>
         <Row>
           <Col xs={3}>
             <li>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</li>
@@ -25,11 +25,11 @@ class Nav extends React.Component {
           </Col>
           <Col xs={3}>
             <p>Connect With Us</p>
-            <img src={process.env.PUBLIC_URL + '/images/icon_facebook.png'} alt="facebook"/>
-            <img src={process.env.PUBLIC_URL + '/images/icon_instagram.png'} alt="instagram"/>
-            <img src={process.env.PUBLIC_URL + '/images/icon_mail.png'} alt="mail"/>
-            <img src={process.env.PUBLIC_URL + '/images/icon_twitter.png'} alt="twitter"/>
-            <img src={process.env.PUBLIC_URL + '/images/icon_twitch.png'} alt="twitch"/>
+            <img src={process.env.PUBLIC_URL + '/images/icon_facebook.png'} alt="facebook" />
+            <img src={process.env.PUBLIC_URL + '/images/icon_instagram.png'} alt="instagram" />
+            <img src={process.env.PUBLIC_URL + '/images/icon_mail.png'} alt="mail" />
+            <img src={process.env.PUBLIC_URL + '/images/icon_twitter.png'} alt="twitter" />
+            <img src={process.env.PUBLIC_URL + '/images/icon_twitch.png'} alt="twitch" />
           </Col>
           <Col xs={3}>
             <p>Copyright Binar 2022</p>
@@ -37,9 +37,8 @@ class Nav extends React.Component {
           </Col>
         </Row>
       </Container>
-      );
-    }
+    );
   }
-  
-  export default Nav;
-  
+}
+
+export default Nav;
