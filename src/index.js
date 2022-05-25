@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Landing Page/Header/Header'
+import Footer from './components/Landing Page/Footer/Footer'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

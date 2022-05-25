@@ -1,52 +1,96 @@
 import React from 'react';
+
+import OwlCarousel from 'react-owl-carousel'
+import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 import {
-  Carousel
+  // Container,
+  Row,
+  Col,
+  Card
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Card.css';
+import './Carousel.css';
 
-class Testimonial extends React.Component {
-  render() {
-    return (
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={process.env.PUBLIC_URL + '/images/car_fiv.png'}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={process.env.PUBLIC_URL + '/images/car_fiv.png'}
-            alt="Second slide"
-          />
+function Testimonial() {
+  return (
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={process.env.PUBLIC_URL + '/images/car_fiv.png'}
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    );
-  }
+    <Row>
+      <OwlCarousel
+        className="owl-theme"
+        loop={true}
+        margin={32}
+        autoHeight={true}
+        nav={true}
+        center={true}
+        dots={false}
+        navText={[
+          "<img src='/images/left.png' style='width: 32px; margin-right: 10px;'>",
+          "<img src='/images/right.png' style='width: 32px;'>",
+        ]}
+        responsive={{
+          0: {
+            items: 1,
+          },
+          800: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        }}
+      >
+        <Row>
+          <Card className='card-testi'>
+            <Card.Body>
+              <Row>
+                <Col className='testi-photo'>
+                  <img src={process.env.PUBLIC_URL + '/images/testi_photo-2.png'} alt="image" />
+                </Col>
+                <Col className='testi' sm={8}>
+                  <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="image" />
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores qui  omnis, ex possimus</p>
+                  <p className="username">John Dee, 32 Bromo</p>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Row>
+        <Row>
+          <Card className='card-testi'>
+            <Card.Body>
+              <Row>
+                <Col className='testi-photo'>
+                  <img src={process.env.PUBLIC_URL + '/images/testi_photo-3.png'} alt="image" />
+                </Col>
+                <Col className='testi' sm={8}>
+                  <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="image" />
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores qui  omnis, ex possimus</p>
+                  <p className="username">John Dee, 32 Bromo</p>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Row>
+        <Row>
+          <Card className='card-testi'>
+            <Card.Body>
+              <Row>
+                <Col className='testi-photo'>
+                  <img src={process.env.PUBLIC_URL + '/images/testi_photo-3.png'} alt="image" />
+                </Col>
+                <Col className='testi' sm={8}>
+                  <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="image" />
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores qui  omnis, ex possimus</p>
+                  <p className="username">John Dee, 32 Bromo</p>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+        </Row>
+      </OwlCarousel>
+    </Row>
+  )
 }
 
 export default Testimonial;

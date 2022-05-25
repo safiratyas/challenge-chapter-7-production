@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Scroll from './components/Scroll-To-Top'
-import Navbar from './components/Navbar'
-import Main from './components/Main'
-import Card from './components/Card'
-import Carousel from './components/Carousel'
-import Banner from './components/Banner'
-import Accordion from './components/Accordion'
+import Navbar from './components/Landing Page/Navbar/Navbar'
+import Main from './components/Landing Page/Main/Main'
+import Card from './components/Landing Page/Card/Card'
+import Carousel from './components/Landing Page/Carousel/Carousel'
+import Banner from './components/Landing Page/Banner/Banner'
+import Accordion from './components/Landing Page/Accordion/Accordion'
 
 function App() {
   return (

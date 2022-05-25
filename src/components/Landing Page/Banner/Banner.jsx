@@ -11,7 +11,7 @@ class Banner extends React.Component {
     return (
       <Card className="banner">
         <Card.Body>
-          <Card.Title className='title'>Sewa Mobil di Jakarta Sekarang</Card.Title>
+          <Card.Title className='banner-title'>Sewa Mobil di Jakarta Sekarang</Card.Title>
           <Card.Text className='desc'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           </Card.Text>
