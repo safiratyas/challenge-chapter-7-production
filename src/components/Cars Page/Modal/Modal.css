@@ -1,0 +1,39 @@
+.modal-input {
+    background-color: white;
+    border-radius: 8px;
+    color: gray;
+    font-size: 16px;
+    font-family: Helvetica;
+    position: relative;
+    margin-top: -4%;
+    margin-bottom: 100px;
+    padding-left: 70px;
+    padding-bottom: 15px;
+    width: 80%;
+    outline-style: black;
+    -webkit-box-shadow: 0 0 2px #F1F3FF; 
+    box-shadow: 0 0 2px #F1F3FF;
+}
+
+.modal-input .modal-label {
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-input .modal-button {
+    margin-top: 43px;
+    z-index: 1;
+}
+
+.filter {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+  }

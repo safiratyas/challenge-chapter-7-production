@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import './index.css';
 import LandingPage from './components/Landing Page/Index';
+import CarsPage from './components/Cars Page/Index';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/cars" element={<CarsPage />} />
     </Routes>
   </BrowserRouter>
 );
