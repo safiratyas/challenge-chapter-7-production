@@ -17,7 +17,7 @@ class Nav extends React.Component {
             <li>binarcarrental@gmail.com</li>
             <li>081-233-334-808</li>
           </Col>
-          <Col xs={3}>
+          <Col xs={3} className="list-service">
             <li>Our Services</li>
             <li>Why Us</li>
             <li>Testimonial</li>

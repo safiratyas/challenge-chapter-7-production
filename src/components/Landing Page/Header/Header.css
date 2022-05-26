@@ -15,5 +15,10 @@
     color: black;
     font-size: 16px;
     font-weight: 500;
+    margin-left: 30px;
+}
+
+.header-button {
+    background-color: #5CB85F;
 }
 

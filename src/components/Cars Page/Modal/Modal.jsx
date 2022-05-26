@@ -12,10 +12,9 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Modal.css';
 
-const InputCars = (props) => {
+const InputCars = () => {
   return (
-    <Container className="modal-input" onClick={activeDarkBackground}>
-      <div className="filter" id="filter" onClick={inactiveDarkBackground}></div>
+    <Container className="modal-input">
       <Row>
         <Col xs={2}>
           <label className="modal-label">Tipe Driver</label>

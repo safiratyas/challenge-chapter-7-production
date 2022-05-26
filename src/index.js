@@ -7,8 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 import './index.css';
-import LandingPage from './components/Landing Page/Index';
-import CarsPage from './components/Cars Page/Index';
+import LandingPage from './pages/LandingPage';
+import CarsPage from './pages/CarsPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

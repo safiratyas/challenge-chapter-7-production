@@ -1,6 +1,6 @@
 import './App.css';
 import Scroll from './components/Scroll-To-Top'
-import Navbar from './components/Landing Page/Navbar/Navbar'
+import Jumbotron from './components/Landing Page/Jumbotron/Jumbotron'
 import Main from './components/Landing Page/Main/Main'
 import Card from './components/Landing Page/Card/Card'
 import Carousel from './components/Landing Page/Carousel/Carousel'
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Scroll>
         <div>
-          <Navbar />
+          <Jumbotron />
           <Main />
           <Card />
           <Carousel />

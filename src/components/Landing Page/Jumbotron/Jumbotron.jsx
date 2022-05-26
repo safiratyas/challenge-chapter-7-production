@@ -7,12 +7,12 @@ import {
   Button
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.css';
+import './Jumbotron.css';
 
 const Navbar = (props) => {
   const navigate = useNavigate();
   return (
-    <Container className='navBody'>
+    <Container className='jumbotron-body'>
       <Row>
         <Col xs={6}>
           <h1>Sewa & Rental Mobil Terbaik di Kawasan Jakarta</h1>
