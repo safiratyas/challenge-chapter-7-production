@@ -10,7 +10,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 
-const Header = (props) => {
+const Header = () => {
   const navigate = useNavigate();
   return (
     <>

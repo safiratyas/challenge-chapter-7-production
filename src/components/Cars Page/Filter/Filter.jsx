@@ -23,7 +23,7 @@ function Filter() {
   const [pickupTime, setPickupTime] = useState("");
   const [passenger, setPassenger] = useState("");
   const [isError, setIsError] = useState("");
-  const [carsData, setCarsData] = useState([])
+  // const [carsData, setCarsData] = useState([])
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
 
@@ -83,12 +83,12 @@ function Filter() {
         <Form onSubmit={handleSubmit}>
           <Row>
             <Col xs={3}>
-              <label className="modal-label">Tipe Transmission</label>
+              <label className="modal-label">Tipe Driver</label>
               <Form.Select aria-label="Default select example" value={type} required onChange={handleType}>
-                <option>Pilih Tipe Transmission</option>
-                <option value="Automatic">Automatic</option>
-                <option value="Automanual">Automanual</option>
-                <option value="Manual">Manual</option>
+                <option>Pilih Tipe Driver</option>
+                <option value="Automatic">Dengan Supir</option>
+                <option value="Automanual">Tanpa Supir (Lepas Kunci)</option>
+                {/* <option value="Manual">Manual</option> */}
               </Form.Select>
             </Col>
             <Col xs={2}>

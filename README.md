@@ -1,70 +1,35 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Binar Car Management
+## Getting Started 
 
-## Available Scripts
+Didalam repository ini terdapat code untuk memenuhi kebutuhan challenge chapter 7 tentang tampilan frontend dari Binar Car Management. Repository ini menggunakan React JS dalam mengimplementasikan code untuk menampilkan display (tampilan) kedua page yaitu Landing Page dan juga Cars Page (untuk rental).
 
-In the project directory, you can run:
+Untuk membuat tampilan Landing Page dan Cars Page sendiri itu memanfaatkan UI Framework (React-Bootstrap), Component, State, Property, dan Styling pada tampilan tersebut. Selain itu, kedua page ditampilkan dengan menggunakan router.
 
-### `npm start`
+## Install React
+```sh
+npx create-react-app challenge-chapter-7
+```
+## Install React Bootstrap
+```sh
+npm install react-bootstrap
+```
+Untuk HTTP Server tampilan itu sendiri, disajikan dengan:
+```sh
+Landing Page
+<Route path="/" element={<LandingPage />} /> 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cars Page (Rent)
+<Route path="/cars" element={<CarsPage />} />
+```
+Data mobil yang ditampilkan berasal dari endpoint yang sudah disediakan dari Binar itu sendiri dengan memanfaatkan Fetch API untuk GET datanya.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+fetch('http://example.com/cars.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
+Data mobil yang ditampilkan di Cars Page itu juga menggunakan filter, data tersebut terdiri dari tipe driver, tanggal, waktu jemput/ambil, dan jumlah penumpang. Selain itu, terdapat alert untuk memberitahu user agar mengisi form sebelum menekan button Cari Mobil.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

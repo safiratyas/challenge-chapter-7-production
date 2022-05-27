@@ -9,7 +9,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Jumbotron.css';
 
-const Navbar = (props) => {
+const Jumbotron = (props) => {
   const navigate = useNavigate();
   return (
     <Container className='jumbotron-body'>
@@ -20,9 +20,9 @@ const Navbar = (props) => {
             Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
           <Button variant="success" className="nav-button" onClick={() => navigate("/cars")}>Mulai Sewa Mobil</Button>
         </Col>
-        <Col><img src={process.env.PUBLIC_URL + '/images/img_car.png'} /> </Col>
+        <Col><img src={process.env.PUBLIC_URL + '/images/img_car.png'} alt="" /> </Col>
       </Row>
     </Container>
   )
 }
-export default Navbar;
+export default Jumbotron;
