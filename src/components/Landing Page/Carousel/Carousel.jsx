@@ -49,10 +49,10 @@ function Testimonial() {
               <Card.Body>
                 <Row>
                   <Col className='testi-photo'>
-                    <img src={process.env.PUBLIC_URL + '/images/testi_photo-2.png'} alt="image" />
+                    <img src={process.env.PUBLIC_URL + '/images/testi_photo-2.png'} alt="" />
                   </Col>
                   <Col className='testi' sm={8}>
-                    <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="image" />
+                    <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores qui omnis, ex possimus eligendi dolorum cumque reiciendis provident, ipsam ea quis incidunt rerum laboriosam! Corrupti, eum. Et, dolore minus.</p>
                     <p className="username">John Dee, 32 Bromo</p>
                   </Col>
@@ -65,10 +65,10 @@ function Testimonial() {
               <Card.Body>
                 <Row>
                   <Col className='testi-photo'>
-                    <img src={process.env.PUBLIC_URL + '/images/testi_photo-3.png'} alt="image" />
+                    <img src={process.env.PUBLIC_URL + '/images/testi_photo-3.png'} alt="" />
                   </Col>
                   <Col className='testi' sm={8}>
-                    <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="image" />
+                    <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores qui omnis, ex possimus eligendi dolorum cumque reiciendis provident, ipsam ea quis incidunt rerum laboriosam! Corrupti, eum. Et, dolore minus.</p>
                     <p className="username">John Dee, 32 Bromo</p>
                   </Col>
@@ -81,10 +81,10 @@ function Testimonial() {
               <Card.Body>
                 <Row>
                   <Col className='testi-photo'>
-                    <img src={process.env.PUBLIC_URL + '/images/testi_photo-3.png'} alt="image" />
+                    <img src={process.env.PUBLIC_URL + '/images/testi_photo-3.png'} alt="" />
                   </Col>
                   <Col className='testi' sm={8}>
-                    <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="image" />
+                    <img src={process.env.PUBLIC_URL + '/images/rate.png'} className="rate" alt="" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores qui omnis, ex possimus eligendi dolorum cumque reiciendis provident, ipsam ea quis incidunt rerum laboriosam! Corrupti, eum. Et, dolore minus.</p>
                     <p className="username">John Dee, 32 Bromo</p>
                   </Col>

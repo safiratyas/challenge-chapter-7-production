@@ -32,6 +32,7 @@
 .modal-input .modal-button {
     margin-top: 43px;
     background-color: #5CB85F;
+    border-radius: 8px;
 }
 
 .filter {
@@ -45,4 +46,8 @@
     padding-top: 60px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-img {
+    object-fit: cover;
 }
