@@ -11,6 +11,7 @@ import {
   Form,
   InputGroup,
   FormControl,
+  Button,
   Alert
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -128,7 +129,7 @@ function Filter() {
               </InputGroup>
             </Col>
             <Col xs={2}>
-              <button variant="success" className="modal-button" type="submit">Cari Mobil</button>
+              <Button variant="success" className="modal-button" type="submit">Cari Mobil</Button>
             </Col>
           </Row>
         </Form>

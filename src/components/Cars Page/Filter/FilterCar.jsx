@@ -1,13 +1,12 @@
 const FilterCar = ({ cars }) => {
   return (
-
     <div className="container" style={{ boxShadow: 20 + "px" }}>
       <div className="cars-container row">
         {cars.map((car) => (
           <div className="col-md-4 my-2" key={car.id}>
             <div className="card h-100">
               <div className="card-body">
-                <img src={car.image} className="card-img" style={{ objectFit: "cover", width: 250 + "px", height: 250 + "px" }} />
+                <img src={car.image} className="card-img" style={{ objectFit: "cover", width: 320 + "px", height: 250 + "px" }} />
                 <h6 className="card-title mt-3 card-title-text">
                   {car.manufacture}/{car.model}
                 </h6>

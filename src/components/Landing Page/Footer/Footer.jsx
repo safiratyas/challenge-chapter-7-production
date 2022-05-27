@@ -11,9 +11,9 @@ class Nav extends React.Component {
   render() {
     return (
       <footer>
-        <Container className='footer'>
-          <Row>
-            <Col xs={3}>
+        <Container>
+          <Row className='footer'>
+            <Col xs={4}>
               <li>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</li>
               <li>binarcarrental@gmail.com</li>
               <li>081-233-334-808</li>
@@ -32,7 +32,7 @@ class Nav extends React.Component {
               <img src={process.env.PUBLIC_URL + '/images/icon_twitter.png'} alt="twitter" />
               <img src={process.env.PUBLIC_URL + '/images/icon_twitch.png'} alt="twitch" />
             </Col>
-            <Col xs={3}>
+            <Col xs={2}>
               <p>Copyright Binar 2022</p>
               <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="twitter" />
             </Col>

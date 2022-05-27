@@ -30,7 +30,7 @@ const Header = (props) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-5">
+                <Nav className="justify-content-end flex-grow-1 pe-5 menu">
                   <Nav.Link href="#our-services">Our Services</Nav.Link>
                   <Nav.Link href="#why-us">Why Us</Nav.Link>
                   <Nav.Link href="#testimonial">Testimonial</Nav.Link>
